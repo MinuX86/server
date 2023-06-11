@@ -1,29 +1,30 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "lib": ["esnext"],
+    "target": "es2022",
+    "lib": ["ES2022"],
     "allowJs": true,
     "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
+    "noFallthroughCasesInSwitch": true,
+    "module": "ES2022",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "noEmit": true,
+    "skipDefaultLibCheck": true,
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "sourceMap": true,
     "paths": {
-      "@*": ["./*"]
+      "@*": ["./src/*"]
     }
   },
-  "ts-node": { "esm": true, "experimentalSpecifierResolution": "node" },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
